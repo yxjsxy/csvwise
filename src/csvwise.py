@@ -82,8 +82,37 @@ def ensure_state_dir():
     STATE_DIR.mkdir(parents=True, exist_ok=True)
 
 
+def load_excel(path: str):
+    """Load Excel file (.xlsx, .xls) and return (headers, rows)."""
+    try:
+        import pandas as pd
+    except ImportError:
+        print("❌ 需要安装 pandas 和 openpyxl: pip install pandas openpyxl xlrd")
+        sys.exit(1)
+    
+    p = Path(path)
+    logger.info("Loading Excel: %s (%.1f KB)", path, p.stat().st_size / 1024)
+    
+    try:
+        # 读取 Excel，支持 .xlsx 和 .xls
+        if p.suffix.lower() == ".xls":
+            df = pd.read_excel(path, engine="xlrd")
+        else:
+            df = pd.read_excel(path, engine="openpyxl")
+        
+        headers = list(df.columns.astype(str))
+        # 转换为字符串列表
+        data = df.astype(str).replace("nan", "").values.tolist()
+        
+        logger.info("Loaded Excel: %d rows, %d columns", len(data), len(headers))
+        return headers, data, ","
+    except Exception as e:
+        print(f"❌ Excel 加载失败: {e}")
+        sys.exit(1)
+
+
 def load_csv(path: str):
-    """Load CSV and return (headers, rows, delimiter) with robust validation."""
+    """Load CSV/Excel and return (headers, rows, delimiter) with robust validation."""
     p = Path(path)
     if not p.exists():
         print(f"❌ 文件不存在: {path}")
@@ -94,6 +123,11 @@ def load_csv(path: str):
     if p.stat().st_size == 0:
         print(f"❌ 文件为空: {path}")
         sys.exit(1)
+    
+    # Excel 文件使用专门的加载器
+    if p.suffix.lower() in (".xlsx", ".xls"):
+        return load_excel(path)
+    
     if p.suffix.lower() not in (".csv", ".tsv", ".txt"):
         print(f"⚠️  文件类型 {p.suffix} 可能不是 CSV，尝试加载中...")
 

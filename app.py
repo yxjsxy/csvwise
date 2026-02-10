@@ -68,9 +68,9 @@ data_source = st.sidebar.radio(
 
 if data_source == "📁 上传 CSV":
     uploaded_file = st.sidebar.file_uploader(
-        "上传 CSV 文件",
-        type=["csv", "tsv", "txt"],
-        help="支持 CSV、TSV 格式"
+        "上传数据文件",
+        type=["csv", "tsv", "txt", "xlsx", "xls"],
+        help="支持 CSV、TSV、Excel 格式"
     )
     
     if uploaded_file:

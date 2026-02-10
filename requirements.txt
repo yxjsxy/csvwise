@@ -2,4 +2,6 @@
 streamlit>=1.30.0
 pandas>=2.0.0
 matplotlib>=3.7.0
+openpyxl>=3.1.0         # Excel .xlsx support
+xlrd>=2.0.0             # Excel .xls support
 psycopg2-binary>=2.9.0  # PostgreSQL support (optional)

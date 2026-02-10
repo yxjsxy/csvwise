@@ -1,8 +1,8 @@
 # 🧠 csvwise - AI-Powered Data Analyst
 
-> 用自然语言分析 CSV 和数据库，无需写代码
+> 用自然语言分析 CSV、Excel 和数据库，无需写代码
 
-csvwise 让你用自然语言与数据对话。支持 CSV 文件和数据库（SQLite/PostgreSQL），结合 AI 大语言模型的理解能力，帮助你快速获取数据洞察。
+csvwise 让你用自然语言与数据对话。支持 CSV、Excel 文件和数据库（SQLite/PostgreSQL），结合 AI 大语言模型的理解能力，帮助你快速获取数据洞察。
 
 ## ✨ 功能一览
 
@@ -26,7 +26,7 @@ csvwise 让你用自然语言与数据对话。支持 CSV 文件和数据库（S
 
 | 功能 | 说明 |
 |------|------|
-| 📁 文件上传 | 拖拽 CSV/TSV 文件 |
+| 📁 文件上传 | 拖拽 CSV/TSV/Excel 文件 |
 | 🗄️ 数据库连接 | SQLite / PostgreSQL |
 | 📊 数据概览 | 行数、列数、类型、统计 |
 | 💬 自然语言提问 | 对话式数据分析 |
