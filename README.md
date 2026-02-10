@@ -33,6 +33,15 @@ csvwise 让你用自然语言与数据对话。支持 CSV、Excel 文件和数�
 | 📈 可视化 | 折线图、柱状图、散点图、饼图、直方图 |
 | 🔍 数据质量 | 完整性、一致性、异常值检测 |
 
+### 📄 支持的文件格式
+
+| 格式 | 扩展名 | 说明 |
+|------|--------|------|
+| CSV | `.csv` | 逗号分隔 |
+| TSV | `.tsv`, `.txt` | Tab 分隔 |
+| Excel | `.xlsx` | Excel 2007+ |
+| Excel (旧) | `.xls` | Excel 97-2003 |
+
 ### 🗄️ 数据库支持
 
 | 数据库 | 连接方式 |
@@ -54,11 +63,15 @@ pip install -e .
 ### 命令行使用
 
 ```bash
-# 查看数据概览
+# 查看数据概览 (CSV)
 csvwise info data.csv
+
+# 查看数据概览 (Excel)
+csvwise info report.xlsx
 
 # 提问
 csvwise ask data.csv "哪个地区销售额最高？"
+csvwise ask sales.xlsx "上个月的订单趋势是什么？"
 
 # 生成报告
 csvwise report data.csv -o analysis.md
@@ -135,9 +148,10 @@ with DatabaseConnector("postgresql://user:pass@localhost:5432/mydb") as db:
 ### 可选依赖
 
 ```bash
-pip install streamlit    # Web UI
-pip install pandas       # 数据处理
-pip install matplotlib   # 图表
+pip install streamlit        # Web UI
+pip install pandas           # 数据处理
+pip install matplotlib       # 图表
+pip install openpyxl xlrd    # Excel 支持
 pip install psycopg2-binary  # PostgreSQL
 ```
 
