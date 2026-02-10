@@ -198,7 +198,3 @@ csvwise/
 ## 📜 License
 
 MIT
-
----
-
-Made with ❤️ by Karl & 牧牧 🐶
