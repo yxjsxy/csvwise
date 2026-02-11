@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csvwise"
+version = "0.1.0"
+description = "🧠 AI-Powered CSV Data Analyst - 用自然语言分析你的数据"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Karl Yang"}
+]
+keywords = ["csv", "data", "analysis", "ai", "llm", "natural-language", "pandas", "sqlite", "postgresql"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.optional-dependencies]
+web = ["streamlit", "pandas", "matplotlib"]
+db = ["psycopg2-binary"]
+excel = ["openpyxl", "xlrd"]
+full = ["streamlit", "pandas", "matplotlib", "psycopg2-binary", "openpyxl", "xlrd", "tabulate"]
+
+[project.scripts]
+csvwise = "csvwise:main"
+
+[project.urls]
+Homepage = "https://github.com/yxjsxy/csvwise"
+"Bug Reports" = "https://github.com/yxjsxy/csvwise/issues"
+Source = "https://github.com/yxjsxy/csvwise"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["csvwise", "db_connector"]
