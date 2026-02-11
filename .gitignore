@@ -8,3 +8,9 @@ build/
 *.egg
 venv/
 .venv/
+.DS_Store
+*.log
+__pycache__/
+*.pyc
+venv/
+.venv/

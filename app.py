@@ -13,15 +13,22 @@ from pathlib import Path
 import streamlit as st
 
 # 添加 src 目录到 path
-sys.path.insert(0, str(Path(__file__).parent / "src"))
+src_path = str(Path(__file__).parent / "src")
+if src_path not in sys.path:
+    sys.path.insert(0, src_path)
 
-from csvwise import (
-    Dataset, 
-    load_csv, 
-    llm_query, 
-    csv_to_markdown_table,
-    VERSION
-)
+# 直接导入模块避免命名冲突
+import importlib.util
+spec = importlib.util.spec_from_file_location("csvwise_mod", Path(__file__).parent / "src" / "csvwise.py")
+csvwise_mod = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(csvwise_mod)
+
+Dataset = csvwise_mod.DataContext  # DataContext 重命名为 Dataset
+load_csv = csvwise_mod.load_csv
+llm_query = csvwise_mod.llm_query
+csv_to_markdown_table = csvwise_mod.csv_to_markdown_table
+VERSION = csvwise_mod.VERSION
+
 from db_connector import DatabaseConnector, get_db_info
 
 # ---------------------------------------------------------------------------
@@ -253,34 +260,14 @@ else:
     with tab_ask:
         st.subheader("💬 用自然语言分析数据")
         
-        # 显示聊天历史
-        for msg in st.session_state.chat_history:
-            with st.chat_message(msg["role"]):
-                st.markdown(msg["content"])
-        
-        # 用户输入
-        user_question = st.chat_input("输入你的问题，例如：哪个产品销售额最高？")
-        
-        if user_question:
-            # 添加用户消息
-            st.session_state.chat_history.append({
-                "role": "user",
-                "content": user_question
-            })
+        # 辅助函数：处理问题并获取 AI 回答
+        def process_question(question: str):
+            """调用 LLM 处理问题并返回回答"""
+            schema = dataset.schema_prompt
+            sample = dataset.sample_table(10)
+            stats_text = dataset.stats_text
             
-            with st.chat_message("user"):
-                st.markdown(user_question)
-            
-            # AI 回答
-            with st.chat_message("assistant"):
-                with st.spinner("分析中..."):
-                    try:
-                        # 构建 prompt
-                        schema = dataset.schema_prompt
-                        sample = dataset.sample_table(10)
-                        stats_text = dataset.stats_text
-                        
-                        prompt = f"""你是一个数据分析专家。基于以下数据集信息回答用户问题。
+            prompt = f"""你是一个数据分析专家。基于以下数据集信息回答用户问题。
 
 {schema}
 
@@ -290,11 +277,34 @@ else:
 统计摘要:
 {stats_text}
 
-用户问题: {user_question}
+用户问题: {question}
 
 请用简洁的中文回答，如果需要计算，展示计算过程。如果无法从数据中得出答案，请说明原因。"""
 
-                        response = llm_query(prompt)
+            return llm_query(prompt)
+        
+        # 检查是否有待处理的问题（最后一条是 user 但没有 assistant 回复）
+        pending_question = None
+        if st.session_state.chat_history:
+            last_msg = st.session_state.chat_history[-1]
+            if last_msg["role"] == "user":
+                pending_question = last_msg["content"]
+        
+        # 显示聊天历史（除了待处理的问题）
+        history_to_show = st.session_state.chat_history[:-1] if pending_question else st.session_state.chat_history
+        for msg in history_to_show:
+            with st.chat_message(msg["role"]):
+                st.markdown(msg["content"])
+        
+        # 处理待处理的问题
+        if pending_question:
+            with st.chat_message("user"):
+                st.markdown(pending_question)
+            
+            with st.chat_message("assistant"):
+                with st.spinner("分析中..."):
+                    try:
+                        response = process_question(pending_question)
                         st.markdown(response)
                         
                         st.session_state.chat_history.append({
@@ -302,7 +312,23 @@ else:
                             "content": response
                         })
                     except Exception as e:
-                        st.error(f"分析失败: {e}")
+                        error_msg = f"分析失败: {e}"
+                        st.error(error_msg)
+                        st.session_state.chat_history.append({
+                            "role": "assistant",
+                            "content": f"❌ {error_msg}"
+                        })
+        
+        # 用户输入
+        user_question = st.chat_input("输入你的问题，例如：哪个产品销售额最高？")
+        
+        if user_question:
+            # 添加用户消息并触发重新渲染
+            st.session_state.chat_history.append({
+                "role": "user",
+                "content": user_question
+            })
+            st.rerun()
         
         # 快捷问题
         st.markdown("---")
@@ -327,18 +353,112 @@ else:
     with tab_viz:
         st.subheader("📈 数据可视化")
         
+        import pandas as pd
+        import matplotlib.pyplot as plt
+        
+        # 创建 DataFrame
+        df = pd.DataFrame(data, columns=headers)
+        
         viz_suggestions = dataset.viz_suggestions
         
         if viz_suggestions:
             st.markdown("**🎯 推荐图表**")
             
             for i, viz in enumerate(viz_suggestions[:5]):
-                with st.expander(f"{viz.get('title', '图表')} ({viz.get('type', 'chart')})"):
-                    st.markdown(f"**描述**: {viz.get('description', '-')}")
-                    st.markdown(f"**列**: {', '.join(viz.get('columns', []))}")
+                viz_type = viz.get('type', 'bar')
+                viz_title = viz.get('title', '图表')
+                viz_cols = viz.get('columns', [])
+                viz_desc = viz.get('description', '-')
+                
+                with st.expander(f"{viz_title} ({viz_type})"):
+                    # 可编辑的描述
+                    edited_desc = st.text_input(
+                        "描述", 
+                        value=viz_desc, 
+                        key=f"desc_{i}"
+                    )
                     
-                    if st.button("生成", key=f"viz_{i}"):
-                        st.info("图表生成功能开发中...")
+                    # 可选择的列
+                    edited_cols = st.multiselect(
+                        "选择列",
+                        options=headers,
+                        default=[c for c in viz_cols if c in headers],
+                        key=f"cols_{i}"
+                    )
+                    
+                    # 图表类型选择
+                    chart_types = ["bar", "line", "scatter", "pie", "histogram"]
+                    edited_type = st.selectbox(
+                        "图表类型",
+                        options=chart_types,
+                        index=chart_types.index(viz_type) if viz_type in chart_types else 0,
+                        key=f"type_{i}"
+                    )
+                    
+                    viz_cols = edited_cols  # 使用编辑后的列
+                    viz_type = edited_type  # 使用编辑后的类型
+                    
+                    if st.button("📊 生成图表", key=f"viz_{i}"):
+                        try:
+                            # 根据推荐类型生成图表
+                            if len(viz_cols) >= 2:
+                                x_col, y_col = viz_cols[0], viz_cols[1]
+                            elif len(viz_cols) == 1:
+                                x_col = viz_cols[0]
+                                y_col = None
+                            else:
+                                st.warning("没有指定列")
+                                continue
+                            
+                            if viz_type in ['line', '折线图', 'trend']:
+                                if y_col:
+                                    st.line_chart(df.set_index(x_col)[y_col])
+                                else:
+                                    st.line_chart(df[x_col])
+                            elif viz_type in ['bar', '柱状图', 'comparison']:
+                                if y_col:
+                                    # 聚合数据
+                                    agg_df = df.groupby(x_col)[y_col].sum().reset_index()
+                                    st.bar_chart(agg_df.set_index(x_col))
+                                else:
+                                    st.bar_chart(df[x_col].value_counts())
+                            elif viz_type in ['scatter', '散点图', 'correlation']:
+                                if y_col:
+                                    st.scatter_chart(df, x=x_col, y=y_col)
+                                else:
+                                    st.warning("散点图需要两列")
+                            elif viz_type in ['pie', '饼图', 'distribution']:
+                                fig, ax = plt.subplots(figsize=(8, 6))
+                                if y_col:
+                                    pie_data = df.groupby(x_col)[y_col].sum()
+                                else:
+                                    pie_data = df[x_col].value_counts()
+                                # 限制最多显示10个类别
+                                if len(pie_data) > 10:
+                                    pie_data = pie_data.head(10)
+                                ax.pie(pie_data.values, labels=pie_data.index, autopct='%1.1f%%')
+                                ax.set_title(viz_title)
+                                st.pyplot(fig)
+                                plt.close()
+                            elif viz_type in ['histogram', '直方图', 'hist']:
+                                fig, ax = plt.subplots(figsize=(8, 5))
+                                ax.hist(df[x_col].dropna(), bins=30, edgecolor='black')
+                                ax.set_xlabel(x_col)
+                                ax.set_ylabel("频率")
+                                ax.set_title(viz_title)
+                                st.pyplot(fig)
+                                plt.close()
+                            else:
+                                # 默认柱状图
+                                if y_col:
+                                    agg_df = df.groupby(x_col)[y_col].sum().reset_index()
+                                    st.bar_chart(agg_df.set_index(x_col))
+                                else:
+                                    st.bar_chart(df[x_col].value_counts())
+                            
+                            st.success(f"✅ {viz_title}")
+                        except Exception as e:
+                            st.error(f"图表生成失败: {e}")
         
         st.markdown("---")
         st.markdown("**🖌️ 自定义图表**")
@@ -364,10 +484,7 @@ else:
             x_col = st.selectbox("列", numeric_cols if numeric_cols else headers)
             y_col = None
         
-        if st.button("📊 生成图表"):
-            import pandas as pd
-            df = pd.DataFrame(data, columns=headers)
-            
+        if st.button("📊 生成图表", key="custom_chart"):
             try:
                 if chart_type == "折线图":
                     st.line_chart(df.set_index(x_col)[y_col])
@@ -376,9 +493,8 @@ else:
                 elif chart_type == "散点图":
                     st.scatter_chart(df, x=x_col, y=y_col)
                 elif chart_type == "直方图":
-                    import matplotlib.pyplot as plt
                     fig, ax = plt.subplots()
-                    ax.hist(df[x_col].dropna(), bins=30)
+                    ax.hist(df[x_col].dropna(), bins=30, edgecolor='black')
                     ax.set_xlabel(x_col)
                     ax.set_ylabel("频率")
                     st.pyplot(fig)
@@ -399,8 +515,8 @@ else:
         
         quality = dataset.quality
         
-        # 总体评分
-        score = quality.get("score", 0)
+        # 总体评分 (字段是 "overall" 不是 "score")
+        score = quality.get("overall", 0)
         
         if score >= 80:
             color = "🟢"
@@ -411,28 +527,34 @@ else:
         
         st.markdown(f"### {color} 总体评分: {score:.0f}/100")
         
-        # 详细分数
+        # 详细分数 (直接在 quality 顶层，不是 details 子对象)
         st.markdown("**评分细项**")
         
-        details = quality.get("details", {})
-        cols = st.columns(4)
+        cols = st.columns(3)
         
         metrics = [
             ("completeness", "完整性"),
             ("consistency", "一致性"),
             ("validity", "有效性"),
-            ("uniqueness", "唯一性")
         ]
         
         for i, (key, label) in enumerate(metrics):
-            val = details.get(key, 0)
+            val = quality.get(key, 0)
             cols[i].metric(label, f"{val:.0f}%")
         
-        # 问题列表
+        # 问题检测
         st.markdown("---")
-        st.markdown("**⚠️ 发现的问题**")
+        st.markdown("**⚠️ 数据问题检测**")
         
-        issues = quality.get("issues", [])
+        issues = []
+        if quality.get("completeness", 100) < 95:
+            empty_pct = 100 - quality.get("completeness", 100)
+            issues.append(f"数据完整性不足：约 {empty_pct:.1f}% 的单元格为空")
+        if quality.get("consistency", 100) < 90:
+            issues.append("部分列存在类型不一致（如数字列中混有文本）")
+        if quality.get("validity", 100) < 100:
+            issues.append("部分行的列数与表头不匹配")
+        
         if issues:
             for issue in issues:
                 st.warning(issue)

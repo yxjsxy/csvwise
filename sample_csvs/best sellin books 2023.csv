@@ -1,0 +1,101 @@
+id,Book name,Author,Rating,reviews count,form,price,Reading age,Print Length,Publishing date,Genre
+#1,Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones,James Clear,4.8 out of 5 stars,145747,Hardcover,$18.88,,320,16/10/2018,Self-Improvement
+#2,"Iron Flame (Standard Edition) (The Empyrean, 2)",Rebecca Yarros,4.7 out of 5 stars,395512,Hardcover,$11.05,,640,07/11/2023,Fiction & Action & Adventure
+#3,Spare,Prince Harry  The Duke of Sussex,4.5 out of 5 stars,116101,Hardcover,$11.99,,416,"January 10, 2023",Biographies & Memoirs
+#4,Fourth Wing,Rebecca Yarros,4.8 out of 5 stars,472618,Paperback,$13.62,,544,17/09/2024,Fiction & Action & Adventure
+#5,The Woman in Me,Britney Spears,4.4 out of 5 stars,51520,Hardcover,$11.37,,288,"October 24, 2023",Biographies & Memoirs
+#6,Lessons in Chemistry: A Novel,Bonnie Garmus,4.6 out of 5 stars,322650,Hardcover,$13.94,,400,"April 5, 2022",Fiction & Action & Adventure
+#7,The 48 Laws of Power,Robert Greene,4.7 out of 5 stars,87375,Paperback,$13.99,,452,01/09/2000,Politics & Social Sciences
+#8,"The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma",Bessel van der Kolk M.D.,4.8 out of 5 stars,82564,Paperback,$14.39,18 years and up,464,08/09/2015,Health & Fitness & Dieting
+#9,It Starts with Us: A Novel (It Ends with Us),Colleen Hoover,4.5 out of 5 stars,228242,Paperback,$1.88,,336,18/10/2022,Fiction & Action & Adventure
+#10,Outlive: The Science and Art of Longevity,Peter Attia MD,4.6 out of 5 stars,19946,Hardcover,$18.00,,496,28/03/2023,Health & Fitness & Dieting
+#11,It Ends with Us: A Novel,Colleen Hoover,4.7 out of 5 stars,405311,Paperback,$9.03,,384,02/08/2016,Fiction & Action & Adventure
+#12,The Housemaid,Freida McFadden,4.5 out of 5 stars,653111,Paperback,$9.69,,336,23/08/2022,Mystery & Thriller & Suspense
+#13,The Very Hungry Caterpillar,Eric Carle,4.9 out of 5 stars,78436,Board book,$5.75,1 - 2 years,26,23/03/1994,Reading & Writing
+#14,Killers of the Flower Moon: The Osage Murders and the Birth of the FBI,David Grann,4.4 out of 5 stars,80996,Paperback,$9.99,,416,"April 3, 2018",Politics & Social Sciences
+#15,Verity,Colleen Hoover,4.6 out of 5 stars,443390,Paperback,$12.09,,336,26/10/2021,Fiction & Action & Adventure
+#16,The Seven Husbands of Evelyn Hugo,Taylor Jenkins Reid,4.6 out of 5 stars,270507,Paperback,$6.91,,400,29/05/2018,Fiction & Action & Adventure
+#17,The Creative Act: A Way of Being,Rick Rubin,4.7 out of 5 stars,10805,Hardcover,$16.99,,432,17/01/2023,Health & Fitness & Dieting
+#18,Taylor Swift: A Little Golden Book Biography,"Wendy Loggia, Elisa Chavarri",4.9 out of 5 stars,9344,Hardcover,$4.35,5 years and up,24,02/05/2023,Arts & Music & Photography
+#19,The Four Agreements: A Practical Guide to Personal Freedom,"Janet Mills, Don Miguel Ruiz",4.7 out of 5 stars,119661,Paperback,$7.05,,160,07/11/1997,Self-Improvement
+#20,Demon Copperhead: A Novel,Barbara Kingsolver,4.6 out of 5 stars,146667,Hardcover,$17.10,,560,"October 18, 2022",Fiction & Action & Adventure
+#21,A Court of Thorns and Roses,Sarah J. Maas,4.6 out of 5 stars,314472,Paperback,$12.80,,448,02/06/2020,Fiction & Action & Adventure
+#22,Interesting Facts For Curious Minds,Jordan Moore,4.6 out of 5 stars,15400,Paperback,$10.41,,196,18/07/2022,Puzzles & Games
+#23,No Brainer (Diary of a Wimpy Kid #18) (Volume 18),Jeff Kinney,4.7 out of 5 stars,13081,Hardcover,$2.03,8 years and up,224,"October 24, 2023",Reading & Writing
+#24,I Love You to the Moon and Back,Amelia Hepworth,4.9 out of 5 stars,80263,Board book,$3.97,baby and up,28,03/03/2015,Reading & Writing
+#25,Dog Man: Twenty Thousand Fleas Under the Sea: A Graphic Novel (Dog Man #11): From the Creator of Captain Underpants,Dav Pilkey,4.8 out of 5 stars,11089,Hardcover,$5.48,7 years and up,240,"March 28, 2023",Comics & Graphic Novels
+#26,Things We Never Got Over (Knockemout),Lucy Score,4.5 out of 5 stars,232211,Paperback,$9.77,,570,"January 12, 2022",Fiction & Action & Adventure
+#27,The Covenant of Water (Oprah's Book Club),Abraham Verghese,4.6 out of 5 stars,94536,Hardcover,$17.96,,736,"May 2, 2023",Fiction & Action & Adventure
+#28,"Brown Bear, Brown Bear, What Do You See?","Bill Martin Jr. , Eric Carle",4.9 out of 5 stars,55794,Board book,$4.82,1 - 2 years,24,15/09/1996,Reading & Writing
+#29,Baking Yesteryear: The Best Recipes from the 1900s to the 1980s,B. Dylan Hollis,4.9 out of 5 stars,13217,Hardcover,$16.78,,256,"July 25, 2023",Cookbooks & Food
+#30,I Love You Like No Otter: A Funny and Sweet Valentine's Day Board Book for Babies and Toddlers (Punderland),Rose Rossner,4.9 out of 5 stars,14622,Board book,$5.37,baby and up,24,07/01/2020,Reading & Writing
+#31,"Friends, Lovers, and the Big Terrible Thing",Matthew Perry,4.5 out of 5 stars,60311,Hardcover,$10.83,,272,"November 1, 2022",Humor & Entertainment
+#32,Rich Dad Poor Dad,Robert T. Kiyosaki,4.7 out of 5 stars,106198,Paperback,$7.34,,336,"April 5, 2022",Business & Money
+#33,"The Wager: A Tale of Shipwreck, Mutiny and Murder",David Grann,4.4 out of 5 stars,39574,Hardcover,$14.47,1 year and up,352,"April 18, 2023",Biographies & Memoirs
+#34,"Oh, the Places You'll Go!",Dr. Seuss ,4.9 out of 5 stars,53602,Hardcover,$8.64,3 - 4 years,56,22/01/1990,Reading & Writing
+#35,My First Library: Boxset of 10 Board Books for Kids,Wonder House Books,4.6 out of 5 stars,88321,Board book,$14.99,1 - 2 years,220,25/04/2018,Reading & Writing
+#36,If He Had Been with Me,Laura Nowlin,4.2 out of 5 stars,60754,Paperback,$6.88,,400,01/11/2019,Fiction & Action & Adventure
+#37,Goodnight Moon,"Margaret Wise Brown, Clement Hurd",4.9 out of 5 stars,31124,Board book,$1.89,baby and up,34,"August 2, 1991",Arts & Music & Photography
+#38,"Tomorrow, and Tomorrow, and Tomorrow",Gabrielle Zevin,4.4 out of 5 stars,129310,Hardcover,$13.28,,416,"July 5, 2022",Fiction & Action & Adventure
+#39,"World of Eric Carle, Around the Farm 30",PI Kids,4.8 out of 5 stars,26464,Hardcover,$11.99,1 - 2 years,24,31/01/2013,Reading & Writing
+#40,The Wonderful Things You Will Be,Emily Winfield Martin,4.9 out of 5 stars,32274,Hardcover,$9.45,3 years and up,36,25/08/2015,Reading & Writing
+#41,Fourth Wing (Special Edition),Rebecca Yarros,4.6 out of 5 stars,5028,Hardcover,$26.91,,528,"November 7, 2023",Fiction & Action & Adventure
+#42,The Silent Patient,Alex Michaelides,4.4 out of 5 stars,398561,Paperback,$2.39,,368,04/05/2021,Mystery & Thriller & Suspense
+#43,Remarkably Bright Creatures: A Read with Jenna Pick,Shelby Van Pelt,4.6 out of 5 stars,129211,Board book,$14.53,,368,03/05/2022,Mystery & Thriller & Suspense
+#44,"The Psychology of Money: Timeless lessons on wealth, greed, and happiness",Morgan Housel,4.7 out of 5 stars,68563,Paperback,$14.18,,256,08/09/2020,Business & Money
+#45,The Shadow Work Journal,Keila Shaheen,4.7 out of 5 stars,6331,Paperback,$23.66,,138,"November 2, 2021",Health & Fitness & Dieting
+#46,Oath and Honor: A Memoir and a Warning,Liz Cheney,4.8 out of 5 stars,17084,Hardcover,$14.78,,384,"December 5, 2023",Biographies & Memoirs
+#47,Where's Bluey?: A Search-and-Find Book,Penguin Young Readers Licenses,4.8 out of 5 stars,9137,Paperback,$2.70,2 years and up,32,"January 25, 2022",Arts & Music & Photography
+#48,Twisted Love,Ana Huang,4.2 out of 5 stars,142671,Paperback,$9.99,,352,"September 27, 2022",Fiction & Action & Adventure
+#49,Icebreaker,Hannah Grace,4.3 out of 5 stars,113454,Paperback,$9.40,,448,"February 7, 2023",Fiction & Action & Adventure
+#50,Things We Hide from the Light,Lucy Score,4.4 out of 5 stars,119095,Paperback,$9.95,,592,"February 21, 2023",Fiction & Action & Adventure
+#51,Reminders of Him: A Novel,Colleen Hoover,4.7 out of 5 stars,347742,Paperback,$9.03,,335,"January 18, 2022",Fiction & Action & Adventure
+#52,A Court of Mist and Fury,Sarah J. Maas,4.8 out of 5 stars,287325,Paperback,$12.16,,656,02/06/2020,Fiction & Action & Adventure
+#53,The Legend of Zelda™: Tears of the Kingdom – The Complete Official Guide: Collector's Edition,Piggyback,4.8 out of 5 stars,7876,Hardcover,$20.19,,496,"July 7, 2023",Computers & Technology
+#54,Elon Musk,Walter Isaacson,4.7 out of 5 stars,22689,Hardcover,$19.93,,688,"September 12, 2023",Biographies & Memoirs
+#55,I Will Teach You to Be Rich: No Guilt. No Excuses. Just a 6-Week Program That Works (Second Edition),Ramit Sethi,4.6 out of 5 stars,23034,Paperback,$10.17,,352,"May 14, 2019",Business & Money
+#56,Haunting Adeline,H. D. Carlton,4.4 out of 5 stars,163368,Paperback,$17.18,,627,13/08/2021,Mystery & Thriller & Suspense
+#57,How to Catch a Dinosaur,Adam Wallace,4.8 out of 5 stars,18031,Hardcover,$5.60,3 years and up,40,"September 3, 2019",Reading & Writing
+#58,Ugly Love: A Novel,Colleen Hoover,4.6 out of 5 stars,165631,Paperback,$8.91,,336,"August 5, 2014",Fiction & Action & Adventure
+#59,If Animals Kissed Good Night,Ann Whitford Paul,4.8 out of 5 stars,75734,Board book,$4.23,baby and up,34,"June 3, 2014",Reading & Writing
+#60,Happy Place,Emily Henry,4.2 out of 5 stars,107168,Hardcover,$12.29,,400,"April 25, 2023",Fiction & Action & Adventure
+#61,Twisted Games,Ana Huang,4.4 out of 5 stars,108327,Paperback,$9.74,,448,"September 27, 2022",Romance
+#62,Chicka Chicka Boom Boom,"Bill Martin Jr.,  John Archambault , Lois Ehlert",4.9 out of 5 stars,41314,Board book,$4.17,1 - 2 years,36,01/01/2012,Reading & Writing
+#63,Hello Beautiful (Oprah's Book Club): A Novel,Ann Napolitano,4.4 out of 5 stars,109707,Hardcover,$13.97,,400,"March 14, 2023",Fiction & Action & Adventure
+#64,The Democrat Party Hates America,Mark R. Levin,4.8 out of 5 stars,5751,Hardcover,$13.47,,400,"September 19, 2023",Politics & Social Sciences
+#65,A Little Life,Hanya Yanagihara,4.5 out of 5 stars,86622,Paperback,$9.25,,832,"January 26, 2016",Fiction & Action & Adventure
+#66,Meditations,Marcus Aurelius,4.8 out of 5 stars,18227,Paperback,$8.18,,272,"May 6, 2003",Politics & Social Sciences
+#67,Holly,Stephen King,4.5 out of 5 stars,43046,Hardcover,$13.98,,464,"September 5, 2023",Mystery & Thriller & Suspense
+#68,The Heaven & Earth Grocery Store,James McBride,4.4 out of 5 stars,73210,Hardcover,$15.05,,400,08/08/2023,Fiction & Action & Adventure
+#69,Scholastic Flash Cards: Sight Words,Scholastic,4.8 out of 5 stars,32845,Cards,$3.07,4 years and up,,01/03/2018,Schools & Teaching
+#70,Think and Grow Rich: The Landmark Bestseller Now Revised and Updated for the 21st Century (Think and Grow Rich Series),Napoleon Hill,4.8 out of 5 stars,29360,Paperback,$8.24,,320,"December 15, 2007",Business & Money
+#71,Daisy Jones & The Six: Reese's Book Club: A Novel,Taylor Jenkins Reid,4.4 out of 5 stars,95715,Paperback,$9.33,,400,"February 4, 2020",Fiction & Action & Adventure
+#72,A Court of Thorns and Roses Paperback Box Set (5 books),Sarah J. Maas,4.8 out of 5 stars,52380,Paperback,$47.90,,2896,01/11/2022,Fiction & Action & Adventure
+#73,How to Win Friends & Influence People,Dale Carnegie ,4.7 out of 5 stars,109703,Paperback,$15.44,,320,01/10/1998,Self-Improvement
+#74,The Complete Cookbook for Young Chefs,America’s Test Kitchen Kids,4.8 out of 5 stars,25279,Hardcover,$9.40,8 years and up,208,16/10/2018,Cookbooks & Food
+#75,"The Boy, the Mole, the Fox and the Horse: Inspiring Conversations on Hope, Love and Personal Growth",Charlie Mackesy,4.8 out of 5 stars,127734,Hardcover,$17.62,7 years and up,128,"October 22, 2019",Comics & Graphic Novels
+#76,Can't Hurt Me: Master Your Mind and Defy the Odds,David Goggins,4.8 out of 5 stars,104512,Paperback,$24.99,,364,"December 10, 2018",Self-Improvement
+#77,The Complete Summer I Turned Pretty Trilogy (Boxed Set): The Summer I Turned Pretty; It's Not Summer Without You; We'll Always Have Summer,Jenny Han,4.8 out of 5 stars,14746,Paperback,$24.62,12 years and up ,928,"May 7, 2013",Fiction & Action & Adventure
+#78,The Exchange: After The Firm (The Firm Series),John Grisham,4.1 out of 5 stars,72785,Hardcover,$12.97,,352,"October 17, 2023",Mystery & Thriller & Suspense
+#79,Dragons Love Tacos,"Adam Rubin, Daniel Salmieri",4.8 out of 5 stars,20638,Hardcover,$9.82,2 years and up,40,14/06/2012,Reading & Writing
+#80,The Nightingale: A Novel,Kristin Hannah,4.7 out of 5 stars,396005,Paperback,$13.48,,608," April 25, 2017",Fiction & Action & Adventure
+#81,Harry Potter Paperback Box Set,"J. K. Rowling, Mary GrandPre?",4.9 out of 5 stars,65142,Paperback,$52.62,9 years and up,,"July 1, 2009",Reading & Writing
+#82,Adult Children of Emotionally Immature Parents,Lindsay C. Gibson,4.8 out of 5 stars,27090,Paperback,$10.21,,216,"June 1, 2015",Self-Improvement
+#83,Stop Overthinking,Nick Trenton,4.7 out of 5 stars,14647,Paperback,$10.20,,200,"March 1, 2021",Business & Money
+#84,A Court of Wings and Ruin,Sarah J. Maas,4.7 out of 5 stars,269981,Paperback,$12.81,,736,02/06/2020,Fiction & Action & Adventure
+#85,The Subtle Art of Not Giving a F*ck,Mark Manson,4.5 out of 5 stars,158416,Hardcover,$13.43,,224,"September 13, 2016",Self-Improvement
+#86,American Prometheus,"Kai Bird, Martin J. Sherwin",4.7 out of 5 stars,13739,Paperback,$14.71,,721,"May 1, 2006",Biographies & Memoirs
+#87,Fast Like a Girl,Dr. Mindy Pelz,4.7 out of 5 stars,7992,Hardcover,$12.81,,352,"December 27, 2022",Health & Fitness & Dieting
+#88,The Shadow Work Journal 2nd Edition,Keila Shaheen,4.6 out of 5 stars,3296,Paperback,$21.74,,227,"February 28, 2023",Self-Improvement
+#89,The Alchemist,Paulo Coelho,4.6 out of 5 stars,123058,Paperback,$5.03,,208,"April 15, 2014",Biographies & Memoirs
+#90,Love You Forever,"Robert Munsch, Sheila McGraw",4.9 out of 5 stars,67104,Paperback,$4.98,baby and up,32,"September 1, 1995",Reading & Writing
+#91,How to Catch a Unicorn,"Adam Wallace, Andy Elkerton",4.8 out of 5 stars,37369,Hardcover,$5.96,3 years and up,40,"March 5, 2019",Reading & Writing
+#92,All the Light We Cannot See,Anthony Doerr,4.5 out of 5 stars,235857,Paperback,$10.18,,544,"April 4, 2017",Fiction & Action & Adventure
+#93,The Ballad of Songbirds and Snakes,Suzanne Collins,4.5 out of 5 stars,105084,Paperback,$10.83,12 years and up ,528,"August 1, 2023",Fiction & Action & Adventure
+#94,What to Expect When You're Expecting,Heidi Murkoff,4.8 out of 5 stars,30260,Paperback,$9.43,,656,31/05/2016,Health & Fitness & Dieting
+#95,The Last Thing He Told Me,Laura Dave,4.3 out of 5 stars,168512,Paperback,$7.16,,336,"March 21, 2023",Fiction & Action & Adventure
+#96,"From Crook to Cook: Platinum Recipes from Tha Boss Dogg's Kitchen (Snoop Dogg Cookbook, Celebrity Cookbook with Soul Food Recipes)",Snoop Dogg,4.8 out of 5 stars,40073,Hardcover,$12.00,1 year and up,192,23/10/2018,Cookbooks & Food
+#97,The 5 Love Languages,Gary Chapman,4.8 out of 5 stars,91554,Paperback,$1.89,,224,"June 1, 2024",Self-Improvement
+#98,"My First Learn-to-Write Workbook: Practice for Kids with Pen Control, Line Tracing, Letters, and More!",Crystal Radke,4.8 out of 5 stars,89173,Paperback,$5.26,3 - 4 years,84,27/08/2019,Reading & Writing
+#99,How to Catch a Mermaid,"Adam Wallace, Andy Elkerton",4.8 out of 5 stars,34994,Hardcover,$5.71,3 years and up,40," July 17, 2018",Reading & Writing
+#100,A Court of Frost and Starlight,Sarah J. Maas,4.2 out of 5 stars,181184,Paperback,$12.74,,272,02/06/2020,Fiction & Action & Adventure

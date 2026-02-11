@@ -1,0 +1,100 @@
+id,Book name,Author,Rating,reviews count,form,price,Reading age,Print Length,Publishing date,Genre
+#1,The Let Them Theory: A Life-Changing Tool That Millions of People Can't Stop Talking About,"Mel Robbins, Sawyer Robbins",4.6 out of 5 stars,36122,Hardcover,$9.33,,336,"December 24, 2024",Self-Improvement
+#2,Sunrise on the Reaping (The Hunger Games),Suzanne Collins,4.7 out of 5 stars,85367,Hardcover,$13.48,12 years and up,400,"March 18, 2025",Fiction & Action & Adventure
+#3,Forgotten Home Apothecary : 250 Powerful Remedies at Your Fingertips,Dr. Nicole Apelian,4.7 out of 5 stars,14335,Paperback,$37.01,12 years and up,288,"August 30, 2024",Health & Fitness & Dieting
+#4,"How To Draw Everything: 300 Drawings of Cute Stuff, Animals, Food, Gifts, and other Amazing Things | Book For Kids",Emma Greene,4.7 out of 5 stars,6481,Paperback,$10.90,6 years and up,110,"November 18, 2023",Arts & Music & Photography
+#5,The Housemaid,Freida McFadden,4.5 out of 5 stars,653111,Paperback,$9.69,,336,"August 23, 2022",Mystery & Thriller & Suspense
+#6,Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones,James Clear,4.8 out of 5 stars,145747,Hardcover,$18.88,,320,"October 16, 2018",Self-Improvement
+#7,"World of Eric Carle, Around the Farm 30-Button Animal Sound Book - Great for First Words - PI Kids",PI Kids,4.8 out of 5 stars,26451,Hardcover,$11.99,1 - 2 years,24,"January 31, 2013",Reading & Writing
+#8,"My First Learn-to-Write Workbook: Practice for Kids with Pen Control, Line Tracing, Letters, and More!",Crystal Radke,4.8 out of 5 stars,89173,Paperback,$5.26,3 - 4 years,84,"August 27, 2019",Reading & Writing
+#9,Partypooper: A side-splitting birthday disaster from the #1 international bestselling Diary of a Wimpy Kid series (Book 20) (Volume 20),Jeff Kinney,4.7 out of 5 stars,5575,Hardcover,$10.97,9 years and up,224,"October 21, 2025",Friendship & Social Skills & School Life
+#10,Cozy Friends: Coloring Book for Adults and Teens Featuring Super Cute Animal Characters with Easy and Simple Designs for Relaxation,Coco Wyo,4.8 out of 5 stars,10232,Paperback,$9.99,,88,"May 22, 2024",Arts & Music & Photography
+#11,"Stress Relief: Coloring Book for Adults and Kids, Bold and Easy, Simple and Big Designs for Relaxation Featuring Animals, Landscape, Flowers, Patterns, Cute Things And Many More",Coco Wyo,4.8 out of 5 stars,6869,Paperback,$9.99,14 years and up,110,"May 4, 2024",Arts & Music & Photography
+#12,The Frozen River: A GMA Book Club Pick: A Novel,Ariel Lawhon,4.6 out of 5 stars,101295,Paperback,$11.99,,448,"November 5, 2024",Fiction & Action & Adventure
+#13,My First Library: Boxset of 10 Board Books for Kids,Wonder House Books,4.6 out of 5 stars,88292,Board book,$14.99,1 - 2 years,220,"April 25, 2018",Reading & Writing
+#14,The Nightingale: A Novel,Kristin Hannah,4.7 out of 5 stars,395774,Paperback,$13.48,,608,"April 25, 2017",Fiction & Action & Adventure
+#15,I Love You to the Moon and Back,Amelia Hepworth,4.9 out of 5 stars,80263,Board book,$3.97,baby and up,28,"March 3, 2015",Reading & Writing
+#16,"The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma",Bessel van der Kolk M.D.,4.8 out of 5 stars,82564,Paperback,$14.39,18 years and up,464,"September 8, 2015",Health & Fitness & Dieting
+#17,The Very Hungry Caterpillar,Eric Carle,4.9 out of 5 stars,78436,Board book,$5.75,1 - 2 years,26,"March 23, 1994",Reading & Writing
+#18,"Onyx Storm (Wing and Claw Collection) (The Empyrean, 3)",Rebecca Yarros,4.6 out of 5 stars,283105,Hardcover,$8.03,,566,"January 21, 2025",Fiction & Action & Adventure
+#19,The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness,Jonathan Haidt,4.6 out of 5 stars,11570,Hardcover,$14.01,,400,"March 26, 2024",Parenting & Relationships
+#20,"Dad, I Want to Hear Your Story: A Father’s Guided Journal To Share His Life & His Love (Hear Your Story Books)","Jeffrey Mason, Hear Your Story",4.7 out of 5 stars,13431,Paperback,$8.79,,110,"May 27, 2019",Arts & Music & Photography
+#21,"The Book of Unusual Knowledge: Big Book of Fascinating Facts & Information | Hardcover Gift for Trivia Buffs, Curious Minds, Adults, Dad & Knowledge Seekers",Publications International Ltd.,4.6 out of 5 stars,22419,Hardcover,$10.18,,704,"April 1, 2012",Engineering
+#22,"Little Corner: Coloring Book for Adults and Teens, Super Cute Designs of Cozy, Hygge Spaces for Relaxation (Cozy Spaces Coloring)",Coco Wyo,4.8 out of 5 stars,9884,Paperback,$9.99,16 years and up,88,"May 29, 2024",Arts & Music & Photography
+#23,"The Psychology of Money: Timeless lessons on wealth, greed, and happiness",Morgan Housel,4.7 out of 5 stars,68532,Paperback,$14.18,,256,"September 8, 2020",Self-Improvement
+#24,Dog Man: Big Jim Believes: A Graphic Novel (Dog Man #14): From the Creator of Captain Underpants,Dav Pilkey,4.7 out of 5 stars,2420,Hardcover,$9.42,8 years and up,224,"November 11, 2025",Comics & Graphic Novels
+#25,The Big Book of Silly Jokes for Kids,Carole P. Roman,4.7 out of 5 stars,25722,Paperback,$5.44,6 years and up,160,"August 27, 2019",Reading & Writing
+#26,The Secret of Secrets: A Novel (Robert Langdon),Dan Brown,4.4 out of 5 stars,49468,Hardcover,$14.00,,688,"September 9, 2025",Mystery & Thriller & Suspense
+#27,Girl Moments: Coloring Book for Adults and Teens Featuring Cute Cozy Daily Activities for Relaxation (Cozy Spaces Coloring),Coco Wyo,4.8 out of 5 stars,8113,Paperback,$9.99,,88,"October 26, 2024",Arts & Music & Photography
+#28,Don't Believe Everything You Think (Expanded Edition): Why Your Thinking Is The Beginning & End Of Suffering (Books By Joseph Nguyen),Joseph Nguyen,4.6 out of 5 stars,22994,Hardcover,$12.54,,192,"October 29, 2024",Self-Improvement
+#29,The Housemaid's Secret,Freida McFadden,4.4 out of 5 stars,348084,Paperback,$9.74,,352,"July 11, 2023",Mystery & Thriller & Suspense
+#30,I Love You Like No Otter: A Funny and Sweet Valentine's Day Board Book for Babies and Toddlers (Punderland),Rose Rossner,4.9 out of 5 stars,14622,Board book,$5.37,baby and up,24,"January 7, 2020",Reading & Writing
+#31,The Rainbow Fish,Marcus Pfister,4.8 out of 5 stars,8150,Board book,$4.70,3 - 4 years,12,"January 27, 1999",Reading & Writing
+#32,How to Test Negative for Stupid: And Why Washington Never Will?A Senator's Funny and Perceptive Takedown of Washington Politics,John Kennedy,4.8 out of 5 stars,9378,Hardcover,$20.98,,224,"October 7, 2025",Politics & Social Sciences
+#33,INNER EXCELLENCE: Train Your Mind for Extraordinary Performance and the Best Possible life,JIM MURPHY,4.7 out of 5 stars,3765,Paperback,$17.00,,360,"May 1, 2020",Health & Fitness & Dieting
+#34,"Would You Rather Book For Kids - 300+ Hilarious, Silly, and Challenging Questions To Make You Laugh",Stephen J. Ellis,4.7 out of 5 stars,3004,Paperback,$11.99,7 years and up,144,"September 22, 2021",Arts & Music & Photography
+#35,"Oh, the Places You'll Go!",Dr. Seuss ,4.9 out of 5 stars,53602,Hardcover,$8.64,3 - 4 years,56,"January 22, 1990",Reading & Writing
+#36,"Mom, I Want to Hear Your Story: A Mother’s Guided Journal To Share Her Life & Her Love (Hear Your Story Books)","Jeffrey Mason , Hear Your Story",4.7 out of 5 stars,20096,Paperback,$11.95,,108,"July 19, 2019",Parenting & Relationships
+#37,"Brown Bear, Brown Bear, What Do You See?","Bill Martin Jr. , Eric Carle",4.9 out of 5 stars,55794,Board book,$4.82,1 - 2 years,24,"September 15, 1996",Reading & Writing
+#38,Murdle: Volume 1,G T Karber,4.8 out of 5 stars,5959,Paperback,$12.84,,386,"June 13, 2023",Puzzles & Games
+#39,Fahrenheit 451,Ray Bradbury,4.6 out of 5 stars,58611,Paperback,$9.05,15 years and up,249,"January 10, 2012",Politics & Social Sciences
+#40,Project Hail Mary: A Novel,Andy Weir,4.7 out of 5 stars,186767,Paperback,$13.98,,496,"October 4, 2022",Mystery & Thriller & Suspense
+#41,The Bible in 52 Weeks: A Yearlong Bible Study for Women,Dr. Kimberly D. Moore,4.7 out of 5 stars,30755,Paperback,$2.70,,208,"February 11, 2020",Bible Study & Reference
+#42,Scholastic Flash Cards: Sight Words,Scholastic,4.8 out of 5 stars,32845,Cards,$3.07,4 years and up,,"March 1, 2018",Schools & Teaching
+#43,The Action Bible: God's Redemptive Story (Action Bible Series),Sergio Cariello,4.9 out of 5 stars,13285,Hardcover,$24.36,8 years and up,832,"September 1, 2020",Bible Study & Reference
+#44,The Women: A Novel,Kristin Hannah,4.7 out of 5 stars,315946,Hardcover,$20.50,,480,"February 6, 2024",Fiction & Action & Adventure
+#45,"Stop, in the Name of God: Why Honoring the Sabbath Will Transform Your Life",Charlie Kirk,4.9 out of 5 stars,476,Hardcover,$29.99,,267,"December 9, 2025",Bible Study & Reference
+#46,Broken Country (Reese's Book Club),Clare Leslie Hall,4.5 out of 5 stars,71453,Hardcover,$15.43,,320,"March 4, 2025",Fiction & Action & Adventure
+#47,The Four Agreements: A Practical Guide to Personal Freedom,"Janet Mills, Don Miguel Ruiz",4.7 out of 5 stars,119661,Paperback,$7.05,,160,"November 7, 1997",Self-Improvement
+#48,The Widow: A Novel,John Grisham,4.4 out of 5 stars,46020,Hardcover,$13.87,,416,"October 21, 2025",Mystery & Thriller & Suspense
+#49,Large Print Easy Color & Frame - Calm (Stress Free Coloring Book),"New Seasons, Publications International Ltd.",4.7 out of 5 stars,6749,Spiral-bound,$6.42,7 years and up,64,"November 29, 2020",Arts & Music & Photography
+#50,The Screaming Goat (Book & Figure),Running Press,4.7 out of 5 stars,41584,Paperback,$7.96,,32,"April 5, 2016",Humor & Entertainment
+#51,The Wedding People: A Novel,Alison Espach,4.3 out of 5 stars,147730,Hardcover,$19.23,,384,"July 30, 2024",Fiction & Action & Adventure
+#52,Chicka Chicka Boom Boom,"Bill Martin Jr.,  John Archambault , Lois Ehlert",4.9 out of 5 stars,41314,Board book,$4.17,1 - 2 years,36,"January 1, 2012",Reading & Writing
+#53,The 48 Laws of Power,Robert Greene,4.7 out of 5 stars,87375,Paperback,$13.99,,452,"September 1, 2000",Politics & Social Sciences
+#54,107 Days,Kamala Harris,4.6 out of 5 stars,7711,Hardcover,$15.18,,320,"September 23, 2025",Politics & Social Sciences
+#55,"The Hardest Hidden Pictures Book Ever: Ultra-Challenging Brain Games for Kids Ages 8-12, Advanced Seek and Find Puzzles Book with Over 1,500 Hidden Objects to Find (Highlights Hidden Pictures)",Highlights,4.7 out of 5 stars,8896,Paperback,$6.70,6 years and up,144,"March 9, 2021",Arts & Music & Photography
+#56,Potty Time with Bean,"Ms. Rachel, Monique Dong",4.7 out of 5 stars,2668,Board book,$8.77,1 - 2 years,32,"January 7, 2025",Schools & Teaching
+#57,1984,George Orwell,4.6 out of 5 stars,122245,Paperback,$5.99,16 years and up,328,"January 1, 1961",Politics & Social Sciences
+#58,The Tenant,Freida McFadden,4.2 out of 5 stars,174300,Paperback,$4.47,,368,"May 6, 2025",Mystery & Thriller & Suspense
+#59,The Housemaid Is Watching,Freida McFadden,4.2 out of 5 stars,270851,Paperback,$12.58,,400,"June 11, 2024",Fiction & Action & Adventure
+#60,James (Pulitzer Prize Winner): A Novel,Percival Everett,4.6 out of 5 stars,95147,Hardcover,$16.81,,320,"March 19, 2024",Politics & Social Sciences
+#61,Where's Spot?: A Lift-the-Flap Book,Eric Hill,4.8 out of 5 stars,35944,Board book,$4.50,1 - 2 years,22,"June 30, 2003",Reading & Writing
+#62,Outlive: The Science and Art of Longevity,Peter Attia MD,4.6 out of 5 stars,19946,Hardcover,$18.00,,496,"March 28, 2023",Health & Fitness & Dieting
+#63,Animal Farm,George Orwell,4.6 out of 5 stars,92537,Paperback,$6.49,14 years and up,140,"April 6, 2004",Politics & Social Sciences
+#64,The Going To Bed Book,Sandra Boynton ,4.8 out of 5 stars,19562,Board book,$3.86,1 - 2 years,16,"November 30, 1982",Reading & Writing
+#65,"From Crook to Cook: Platinum Recipes from Tha Boss Dogg's Kitchen (Snoop Dogg Cookbook, Celebrity Cookbook with Soul Food Recipes)",Snoop Dogg,4.8 out of 5 stars,40073,Hardcover,$12.00,1 year and up,192," October 23, 2018",Cookbooks & Food
+#66,The Beginner's Bible: Timeless Children's Stories,The Beginner's Bible,4.9 out of 5 stars,27964,Hardcover,$10.93,2 years and up,512,"October 4, 2016",Bible Study & Reference
+#67,Nobody's Girl: A Memoir of Surviving Abuse and Fighting for Justice,Virginia Roberts Giuffre,4.7 out of 5 stars,17892,Hardcover,$16.45,,400,"October 21, 2025",Biographies & Memoirs
+#68,The Lost Bookshop,Evie Woods,4.4 out of 5 stars,158268,Paperback,$4.99,,448,"November 7, 2023",Fiction & Action & Adventure
+#69,Spooky Cutie: Coloring Book for Adults and Teens Featuring Adorable Creepy Creatures in Cozy Hygge Moments for Relaxation (Cozy Spaces Coloring),Coco Wyo,4.8 out of 5 stars,6443,Paperback,$9.99,,88,"July 9, 2024",Arts & Music & Photography
+#70,The Crash,Freida McFadden,4.2 out of 5 stars,162653,Paperback,$4.99,,384,"January 28, 2025",Mystery & Thriller & Suspense
+#71,Dog Man: Big Jim Begins: A Graphic Novel (Dog Man #13): From the Creator of Captain Underpants,Dav Pilkey,4.8 out of 5 stars,7549,Hardcover,$5.64,7 years and up,224,"December 3, 2024",Comics & Graphic Novels
+#72,What to Expect When You're Expecting,Heidi Murkoff,4.8 out of 5 stars,30260,Paperback,$9.43,,656,"May 31, 2016",Health & Fitness & Dieting
+#73,Onyx Storm,Rebecca Yarros,4.6 out of 5 stars,283125,Hardcover,$20.50,,544,"January 21, 2025",Fiction & Action & Adventure
+#74,"The New Menopause: Navigating Your Path Through Hormonal Change with Purpose, Power, and Facts",Mary Claire Haver MD,4.7 out of 5 stars,4255,Hardcover,$19.58,,320,"April 30, 2024",Health & Fitness & Dieting
+#75,Man's Search for Meaning,Viktor E. Frankl,4.7 out of 5 stars,96578,Paperback,$12.86,,184,"June 1, 2006",History
+#76,Fourth Wing,Rebecca Yarros,4.8 out of 5 stars,472618,Paperback,$13.62,,544,"September 17, 2024",Fiction & Action & Adventure
+#77,The Wonderful Things You Will Be,Emily Winfield Martin,4.9 out of 5 stars,32274,Hardcover,$9.45,3 years and up,36,"August 25, 2015",Reading & Writing
+#78,1929: Inside the Greatest Crash in Wall Street History--and How It Shattered a Nation,Andrew Ross Sorkin,4.6 out of 5 stars,6031,Hardcover,$9.59,,592,"October 14, 2025",Business & Money
+#79,Brimstone,Callie Hart,4.4 out of 5 stars,46437,Hardcover,$18.12,,672,"November 18, 2025",Fiction & Action & Adventure
+#80,A Navy SEAL's Bug-In Guide: How to Turn Your House into the Safest Place on Earth,Joel Lambert,4.7 out of 5 stars,3577,Paperback,$37.00,,240,"January 1, 2024",Engineering
+#81,Goodnight Moon,"Margaret Wise Brown, Clement Hurd",4.9 out of 5 stars,351108,Board book,$5.83,baby and up,30,"August 2, 1991",Reading & Writing
+#82,Verity,Colleen Hoover,4.6 out of 5 stars,443390,Paperback,$12.09,,336,"October 26, 2021",Fiction & Action & Adventure
+#83,Happy Birthday to You!,Dr. Seuss,4.8 out of 5 stars,17396,Hardcover,$9.49,1 year and up,64,"August 12, 1959",Reading & Writing
+#84,Why a Daughter Needs a Dad,"Gregory E. Lang, Susanna Leonard Hill, Sydney Hanson",4.9 out of 5 stars,19727,Hardcover,$5.72,baby and up,32,"May 7, 2019",Reading & Writing
+#85,A Court of Thorns and Roses Paperback Box Set (5 books),Sarah J. Maas,4.8 out of 5 stars,52380,Paperback,$47.90,,2896,"November 1, 2022",Fiction & Action & Adventure
+#86,My Friends,Fredrik Backman,4.6 out of 5 stars,50581,Hardcover,$12.97,,448,"May 6, 2025",Fiction & Action & Adventure
+#87,The God of the Woods,Liz Moore,4.4 out of 5 stars,109729,Hardcover,$15.35,,496,"July 2, 2024",Fiction & Action & Adventure
+#88,The Alchemist,Paulo Coelho,4.6 out of 5 stars,122904,Paperback,$5.88,,208,"April 15, 2014",Bible Study & Reference
+#89,Lots of Knock-Knock Jokes for Kids,Whee Winn,4.6 out of 5 stars,12949,Paperback,$3.99,5 years and up,128,"February 2, 2016",Reading & Writing
+#90,"See You Later, Alligator","Sally Hopgood,  Emma Levey ",4.8 out of 5 stars,3576,Hardcover,$8.91,2 years and up,32,"September 20, 2016",Reading & Writing
+#91,"Magic Tree House Boxed Set, Books 1-4","Mary Pope Osborne, Sal Murdocca",4.8 out of 5 stars,23786,Paperback,$14.98,5 years and up,80,"May 29, 2001",Reading & Writing
+#92,A People's History of the United States,Howard Zinn,4.7 out of 5 stars,16848,Paperback,$17.98,,784,"November 17, 2015",History
+#93,Bob Books,"Bobby Lynn Maslen, Amy Jindra, Karen Wall",4.8 out of 5 stars,22304,Hardcover,$14.13,3 years and up,144,"May 1, 2006",Reading & Writing
+#94,Where's Bluey?: A Search-and-Find Book,Penguin Young Readers Licenses,4.8 out of 5 stars,9116,Paperback,$2.70,2 years and up,32,"January 25, 2022",Arts & Music & Photography
+#95,Fuzzy Hygge: Cute and Cozy Coloring Book,Vivi Tinta,4.8 out of 5 stars,5807,Paperback,$9.63,,88,"May 24, 2024",Arts & Music & Photography
+#96,Alchemised,SenLinYu,4.7 out of 5 stars,22093,Hardcover,$9.64,,1040,"September 23, 2025",Fiction & Action & Adventure
+#97,"The Next Conversation: Argue Less, Talk More",Jefferson Fisher,4.9 out of 5 stars,3433,Hardcover,$9.65,,304,"March 18, 2025",Business & Money
+#98,A Beautiful Year in the Bible:,Alabaster Co. ,4.7 out of 5 stars,3098,Paperback,$26.88,,224,"September 1, 2024",Bible Study & Reference
+#99,The Complete Cookbook for Young Chefs,America’s Test Kitchen Kids,4.8 out of 5 stars,25279,Hardcover,$9.40,8 years and up,208,"October 16, 2018",Cookbooks & Food
